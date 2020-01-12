@@ -1,7 +1,8 @@
 const express = require('express');
 const hbs = require('hbs');
  var app =  express();
-const fs = require('fs')
+const fs = require('fs');
+const port= process.env.PORT || 3000;
  //Middleware
 
 
@@ -70,6 +71,6 @@ app.get('/about',(req,res)=>{
 })
 
 
- app.listen(3000);
+ app.listen(port);
  
 
